@@ -1,0 +1,56 @@
+{
+  "name": "parametric-handlers",
+  "version": "0.7.0",
+  "deprecated": false,
+  "description": "Way to use parameterized event handlers in React",
+  "main": "dist/parametric-handlers.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src --color --format stylish",
+    "lint:fix": "eslint src --color --format stylish --fix",
+    "test": "jest",
+    "test:detail": "jest --verbose",
+    "test:cover": "jest --coverage",
+    "build": "babel src --out-dir dist --presets @babel/preset-env",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "victoraspirin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-toys/parametric-handlers.git"
+  },
+  "homepage": "https://github.com/js-toys/parametric-handlers",
+  "bugs": {
+    "url": "https://github.com/js-toys/parametric-handlers/issues"
+  },
+  "keywords": [
+    "react",
+    "event",
+    "handler",
+    "parameter",
+    "parametric",
+    "parameterized"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash.isequal": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

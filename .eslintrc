@@ -1,0 +1,42 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "max-len": ["error", {"code":120}],
+    "no-multiple-empty-lines": ["error", {"max":3}],
+    "comma-dangle": ["error", "never"],
+    "brace-style": ["error", "stroustrup"],
+    "no-param-reassign": ["error", {"props":false}],
+    "valid-typeof":["error", {"requireStringLiterals":false}],
+    "object-curly-spacing": ["error", "never"],
+    "object-curly-newline": "off",
+    "key-spacing": "off",
+    "no-nested-ternary": "off",
+    "consistent-return": "off",
+    "yoda": "off",
+    "no-underscore-dangle": "off",
+    "prefer-destructuring": ["error", {
+      "VariableDeclarator": {"array":false, "object":true},
+      "AssignmentExpression": {"array":false, "object":true}
+    }, {
+      "enforceForRenamedProperties": false
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "max-classes-per-file": ["error", 3]
+      }
+    }
+  ]
+}
